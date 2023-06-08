@@ -1,0 +1,102 @@
+.h-wrapper{
+    color: white;
+    z-index: 99;
+}
+
+.h-container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.hero-left
+{
+    gap: 3rem;
+}
+
+.hero-title{
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title>h1{
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 4rem;
+}
+
+.orange-circle{
+    height: 4rem;
+    width: 4rem;
+    background: var(--orange-gradient);
+    border-radius: 100%;
+    position: absolute;
+    top: -10%;
+    right: 28%;
+    z-index: -1;
+}
+
+.search-bar{
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(120, 120, 120, .374);
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-bar>input{
+    border: none;
+    outline: none;
+}
+
+.stats{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stat>:nth-child(1){
+    font-size: 2rem;
+}
+
+.stat>:nth-child(1)>:last-child{
+    color: orange;
+}
+
+
+
+
+
+.h-menu{
+    gap: 2rem;
+}
+
+.h-menu>*:hover{
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    .h-menu{
+        z-index: 99;
+        color: var(--black);
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        background: white;
+        flex-direction: column;
+        font-weight: 500;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: all 300ms ease-in;
+    }
+}
